@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // ssr: true,
+  ssr: true,
+  nitro: {
+    preset: 'netlify'
+  },
   app: {
     head: {
       title: 'Tomo Digital Creative',
