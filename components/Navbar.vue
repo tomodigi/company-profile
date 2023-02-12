@@ -8,7 +8,7 @@ const navMenu = ref([
   },
   {
     title: 'Service',
-    url: '#service'
+    url: '/services'
   },
   {
     title: 'Pricing',

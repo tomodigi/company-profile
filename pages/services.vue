@@ -2,16 +2,14 @@
 const route = useRoute();
 
 useServerSeoMeta({
-  title: 'Tomo Digital Creative',
-  ogTitle: 'Tomo Digital Creative',
+  title: 'Tomo Digital Service',
+  ogTitle: 'Tomo Services',
   ogImage:'~/assets/images/tomo_2.png',
-  ogDescription: 'Digital Creative',
+  ogDescription: 'Pilih Paketmu',
   ogSiteName: 'TomoDigi',
   ogUrl: route.fullPath
 })
 </script>
 <template>
-  <main>
-    <Jumbotron />
-  </main>
+<h1 class="text-4xl">SERVICE PAGES</h1>
 </template>
