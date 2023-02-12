@@ -4,9 +4,9 @@ const route = useRoute();
 useServerSeoMeta({
   title: 'Tomo Digital Service',
   ogTitle: 'Tomo Services',
-  ogImage:'~/assets/images/tomo_2.png',
-  ogDescription: 'Pilih Paketmu',
-  ogSiteName: 'TomoDigi',
+  ogImage:'/tomo_2.png',
+  ogDescription: 'Beragam service yang disediakan oleh TOMO',
+  ogSiteName: 'Tomodigi',
   ogUrl: route.fullPath
 })
 </script>

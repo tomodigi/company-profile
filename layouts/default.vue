@@ -1,11 +1,12 @@
 <script setup>
 </script>
 <template>
-  <main class="h-screen bg-slate-100 px-4 md:px-14">
+  <main class="h-screen bg-slate-100 px-4 md:px-16">
     <Navbar />
-    <div class="content px-14">
+    <div class="content md:px-16">
       <slot></slot>
     </div>
+    <FooterApp />
   </main>
 </template>
 

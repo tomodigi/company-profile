@@ -1,17 +1,20 @@
 <script setup>
+import SolutionSection from '../components/Solution/SolutionSection.vue';
 const route = useRoute();
 
 useServerSeoMeta({
   title: 'Tomo Digital Creative',
   ogTitle: 'Tomo Digital Creative',
-  ogImage:'~/assets/images/tomo_2.png',
+  ogImage:'/tomo_2.png',
   ogDescription: 'Digital Creative',
   ogSiteName: 'TomoDigi',
   ogUrl: route.fullPath
 })
+
 </script>
 <template>
-  <main>
-    <Jumbotron />
-  </main>
+  <div>
+    <Jumbotron class="w-full flex justify-between items-center h-[90vh]" />
+    <SolutionSection class="mt-10" />
+  </div>
 </template>
