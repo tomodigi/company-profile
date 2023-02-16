@@ -2,16 +2,16 @@
 export default defineNuxtConfig({
   ssr: false,
   nitro: {
-    preset: 'vercel'
+    preset: 'netlify',
   },
   modules: [
     [
       '@nuxtjs/google-adsense',
       {
-        id: "ca-pub-2170630358154868",
+        id: 'ca-pub-2170630358154868',
         onPageLoad: true,
-      }
-    ]
+      },
+    ],
   ],
   app: {
     head: {
@@ -21,13 +21,13 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         {
           name: 'viewport',
-          content: 'width=device-width, initial-scale=1'
-        }
+          content: 'width=device-width, initial-scale=1',
+        },
       ],
       link: [
         {
           rel: 'icon',
-          href: '/favicon.png'
+          href: '/favicon.png',
         },
         {
           rel: 'preconnect',
@@ -36,14 +36,14 @@ export default defineNuxtConfig({
         {
           rel: 'preconnect',
           href: 'https://fonts.gstatic.com',
-          crossorigin: 'anonymous'
+          crossorigin: 'anonymous',
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Plus+Jakarta+Sans&display=swap'
-        }
-      ]
-    }
+          href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Plus+Jakarta+Sans&display=swap',
+        },
+      ],
+    },
   },
   css: ['~/assets/css/main.css'],
   postcss: {
@@ -52,4 +52,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-})
+});
