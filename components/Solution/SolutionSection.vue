@@ -1,29 +1,19 @@
 <script setup>
 import SolutionItem from './SolutionItem.vue';
+import { serviceList } from '../../data/TomoService.js'
 
-const solutions = [
-  {
-    name: 'Strategy Planning & Execution',
-    background: '/undraw_engineering_team_a7n2.svg'
-  },
-  {
-    name: 'Digital Platform Handling',
-    background: '/undraw_social_strategy_re_mk87.svg'
-  },
-  {
-    name: 'Set & Achieve Goal Together',
-    background: 'undraw_success_factors_re_ce93.svg'
-  },
-]
 </script>
 <template>
   <section id="solutionSection">
     <h1 class="text-2xl text-center font-bold text-neutral-800">Our Solutions</h1>
-    <div class="flex flex-col gap-y-10 justify-around mt-6">
+    <div class="flex gap-x-6">
       <SolutionItem
-        v-for="solution in solutions"
+        v-for="(solution, index) in serviceList"
         :key="solution.name"
         :solution="solution"
+        class="mt-5"
+        data-aos="fade-right"
+        :data-aos-delay="150 * index"
       />
     </div>
   </section>

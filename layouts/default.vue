@@ -6,7 +6,7 @@
     <div class="content md:px-16">
       <slot></slot>
     </div>
-    <FooterApp />
+    <!-- <FooterApp /> -->
   </main>
 </template>
 
