@@ -7,13 +7,9 @@ onMounted(() => {
     isLoading.value = false;
   }, 1500);
 })
-// onBeforeRouteLeave(() => {
-//   clearTimeout(timeout);
-// })
 
 </script>
 <template>
-  <!-- <ScreenLoader v-if="isLoading" /> -->
   <NuxtLayout>
     <NuxtLoadingIndicator
       :color="'#06b6d4'"

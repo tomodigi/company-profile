@@ -2,8 +2,17 @@
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
-    preset: 'netlify'
+    preset: 'vercel'
   },
+  modules: [
+    [
+      '@nuxtjs/google-adsense',
+      {
+        id: "ca-pub-2170630358154868",
+        onPageLoad: true,
+      }
+    ]
+  ],
   app: {
     head: {
       title: 'Tomo Digital Creative',
