@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   nitro: {
-    preset: 'netlify',
+    preset: 'vercel-edge',
   },
   modules: [
     [
