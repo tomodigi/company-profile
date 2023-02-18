@@ -12,7 +12,7 @@ export default defineNuxtConfig({
         onPageLoad: true,
       },
     ],
-    ['nuxt-icon']
+    ['nuxt-icon'],
   ],
   app: {
     head: {
@@ -23,6 +23,10 @@ export default defineNuxtConfig({
         {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1',
+        },
+        {
+          property: "og:type",
+          content: "website",
         },
       ],
       link: [
