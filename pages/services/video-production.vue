@@ -17,7 +17,7 @@ useServerSeoMeta({
     <h1 class="text-4xl text-neutral-800 font-bold text-center">Harga Jasa Pembuatan Video</h1>
     <section id="motionGraphic">
       <HeadBar text="Motion Graphic" />
-      <div class="flex flex-col md:flex-row justify-center flex-wrap gap-x-5 gap-y-5">
+      <div class="flex justify-center flex-wrap md:gap-x-5 gap-y-5">
         <ServicesServiceCard
           v-for="(service, index) in motionGraphic"
           :key="service.name"
@@ -30,7 +30,7 @@ useServerSeoMeta({
 
     <section id="Video Production">
       <HeadBar text="Video Production" />
-      <div class="flex justify-center flex-wrap gap-x-5">
+      <div class="flex justify-center flex-wrap md:gap-x-5 gap-y-5">
         <ServicesServiceCard
           v-for="(service, index) in videoProduction"
           :key="service.name"

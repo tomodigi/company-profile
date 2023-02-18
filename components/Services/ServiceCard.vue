@@ -17,6 +17,7 @@ const props = defineProps({
     </div>
     <div class="p-5 grow">
       <h1 class="font-extrabold text-3xl text-center text-neutral-700">
+        <span class="text-sm" v-if="service.name === 'CUSTOM'">Start From <br></span>
         {{ IDR(service.price) }}
       </h1>
       <ul class="mt-4 flex flex-col gap-y-2 font-medium px-3">

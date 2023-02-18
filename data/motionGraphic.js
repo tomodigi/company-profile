@@ -20,6 +20,13 @@ const motionGraphic = [
     price: 1599000,
     service: ['1 Konsep', 'Durasi Max 60 Detik', 'Tidak Termasuk Voice Over', '2x Revisi']
   },
+  {
+    name: 'CUSTOM',
+    estimate: null,
+    estimateType: null,
+    price: 200000,
+    service: ['CUSTOM']
+  },
 ]
 
 export default motionGraphic;

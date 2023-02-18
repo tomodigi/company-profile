@@ -2,9 +2,9 @@
 </script>
 <template>
   <main class="bg-slate-50 w-full">
-    <div class="outer-content p-5 md:p-0 md:w-[1400px] mx-auto">
+    <div class="outer-content md:w-[1400px] mx-auto">
       <Navbar />
-      <div class="content w-full md:w-[1280px] mx-auto">
+      <div class="content w-full md:w-[1280px] p-5 md:p-0 mx-auto">
         <slot></slot>
       </div>
       <FooterApp />
