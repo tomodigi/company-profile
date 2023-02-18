@@ -14,7 +14,7 @@ useServerSeoMeta({
 </script>
 <template>
   <div>
-    <Jumbotron class="w-full flex justify-between items-center h-[90vh]" />
+    <Jumbotron class="w-full flex justify-between items-center md:h-[80vh]" />
     <SolutionSection class="mt-10" />
   </div>
 </template>

@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   nitro: {
     preset: 'vercel-edge',
   },
@@ -12,6 +12,7 @@ export default defineNuxtConfig({
         onPageLoad: true,
       },
     ],
+    ['nuxt-icon']
   ],
   app: {
     head: {
@@ -40,7 +41,7 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Plus+Jakarta+Sans&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@600;700;800&family=Plus+Jakarta+Sans&display=swap',
         },
       ],
     },

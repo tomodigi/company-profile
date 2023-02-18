@@ -22,7 +22,7 @@ const navMenu = ref([
 </script>
 
 <template>
-  <nav class="bg-transparent h-16 flex justify-between items-center">
+  <nav class="bg-transparent h-16 flex justify-between items-center sticky top-0 z-50 bg-slate-50">
     <img src="~/assets/images/favicon.png" alt="" width="65" height="65">
     <div class="hidden md:flex items-center gap-x-5">
       <NuxtLink
@@ -30,7 +30,7 @@ const navMenu = ref([
         :key="item.url"
         :to="item.url"
         active-class="text-purple-500"
-        class="text-indigo-500 text-sm font-semibold hover:text-indigo-500 transition-all"
+        class="text-indigo-500 font-semibold hover:text-indigo-500 transition-all"
       >
         {{ item.title }}
       </NuxtLink>
