@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   nitro: {
-    preset: 'vercel-edge',
+    preset: 'netlify',
   },
   modules: [
     [
@@ -25,8 +25,8 @@ export default defineNuxtConfig({
           content: 'width=device-width, initial-scale=1',
         },
         {
-          property: "og:type",
-          content: "website",
+          property: 'og:type',
+          content: 'website',
         },
       ],
       link: [
