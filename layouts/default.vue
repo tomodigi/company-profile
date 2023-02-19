@@ -1,10 +1,10 @@
 <script setup>
 </script>
 <template>
-  <main class="bg-slate-50 w-full">
-    <div class="outer-content md:w-[1400px] mx-auto">
+  <main class="relative bg-slate-50 w-full flex justify-center">
+    <div class="outer-content w-full 2xl:w-[1400px]">
       <Navbar />
-      <div class="content w-full md:w-[1280px] p-5 md:p-0 mx-auto">
+      <div class="content w-full xl:w-[1280px] p-5 lg:p-10 2xl:p-0 mx-auto">
         <slot></slot>
       </div>
       <FooterApp />

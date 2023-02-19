@@ -23,7 +23,7 @@ const isShow = ref(false)
 </script>
 
 <template>
-  <nav class="h-16 flex justify-between items-center sticky top-0 z-50 px-5 md:px-0 bg-slate-50">
+  <nav class="h-16 flex justify-between items-center sticky top-0 z-50 px-5 lg:px-8 2xl:px-0 bg-slate-50 w-full">
     <img src="~/assets/images/favicon.png" alt="" width="65" height="65">
     <div class="hidden md:flex items-center gap-x-5">
       <NuxtLink
