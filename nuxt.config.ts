@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   nitro: {
     preset: 'netlify',
   },
@@ -27,6 +27,14 @@ export default defineNuxtConfig({
         {
           property: 'og:type',
           content: 'website',
+        },
+        {
+          name: 'keywords',
+          content: 'Digital Agency, Tomo, tomodigi, jasa pembuatan web, jasa pembuatan animasi, jasa pembuatan video'
+        },
+        {
+          name: 'robots',
+          content: "index, follow"
         },
       ],
       link: [
