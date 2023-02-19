@@ -17,6 +17,6 @@ useServerSeoMeta({
     <Jumbotron class="w-full flex justify-between items-center md:h-[80vh]" />
     <SolutionSection class="mt-16" />
     <TeamSection class="mt-16" />
-    <AboutusSection class="mt-16" />
+    <AboutusSection />
   </div>
 </template>

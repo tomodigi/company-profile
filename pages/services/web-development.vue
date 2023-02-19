@@ -13,7 +13,7 @@ useServerSeoMeta({
 })
 </script>
 <template>
-  <div class="mt-12 flex flex-col">
+  <div class="mt-12 flex flex-col inner--content">
     <h1 class="text-2xl md:text-4xl text-neutral-800 font-bold text-center mb-10">Harga Jasa Pembuatan Website</h1>
     <section id="webDevelopment">
       <HeadBar text="Web Development" />

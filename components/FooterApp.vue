@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-<footer class="footer p-10 bg-slate-100 mt-10">
+<footer class="footer inner--content p-10 bg-slate-100 mt-10">
   <div>
     <img src="~/assets/images/tomo_2.png" alt="Tomo Logo" width="160">
     <p class="font-tomo-main">Digital Creative

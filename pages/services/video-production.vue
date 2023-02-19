@@ -13,7 +13,7 @@ useServerSeoMeta({
 })
 </script>
 <template>
-  <div class="mt-12 flex flex-col gap-y-28">
+  <div class="mt-12 flex flex-col gap-y-28 inner--content">
     <h1 class="text-4xl text-neutral-800 font-bold text-center">Harga Jasa Pembuatan Video</h1>
     <section id="motionGraphic">
       <HeadBar text="Motion Graphic" />

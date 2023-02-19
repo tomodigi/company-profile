@@ -4,7 +4,7 @@ import { serviceList } from '../../data/TomoService.js'
 
 </script>
 <template>
-  <section id="solutionSection">
+  <section id="solutionSection" class="inner--content">
     <h1 class="text-4xl text-neutral-800 font-bold text-center mb-10">Our Solutions</h1>
     <div class="flex gap-x-6 flex-wrap justify-center md:justify-start">
       <SolutionItem
