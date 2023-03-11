@@ -6,7 +6,7 @@
       <h2 class="text-4xl font-bold tracking-tight text-neutral-800 text-center">About Us</h2>
       <p class="mt-6 text-lg leading-8 text-neutral-700 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nemo, nulla doloremque impedit perspiciatis in amet laborum saepe vero quibusdam dolor eos nostrum quisquam voluptatem est earum molestiae rem! Tempore veniam fugiat nulla quasi voluptatibus quis placeat itaque saepe quo.</p>
     </div>
-    <div class="mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+    <!-- <div class="mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
       <div class="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-neutral-800 sm:grid-cols-2 md:flex lg:gap-x-10">
         <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
 
@@ -35,7 +35,7 @@
           <dd class="text-2xl font-bold leading-9 tracking-tight text-neutral-800">Unlimited</dd>
         </div>
       </dl>
-    </div>
+    </div> -->
   </div>
 </div>
 </template>

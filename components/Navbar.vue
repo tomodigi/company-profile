@@ -1,5 +1,6 @@
 <script setup>
 import Hamburger from './Hamburger.vue'
+import { serviceList } from '~/data/TomoService'
 
 const navMenu = ref([
   {
@@ -7,12 +8,11 @@ const navMenu = ref([
     url: '/'
   },
   {
-    title: 'Service',
-    url: '/services'
-  },
-  {
-    title: 'Pricing',
-    url: '#pricing'
+    title: 'Services',
+    url: '/services',
+    child: [
+      ...serviceList,
+    ]
   },
   {
     title: 'About Us',
@@ -23,18 +23,38 @@ const isShow = ref(false)
 </script>
 
 <template>
-  <nav class="h-16 flex justify-between items-center sticky top-0 z-50 px-5 md:px-44 2xl:px-56 bg-slate-50 w-full">
+  <nav class="inner--content h-16 flex justify-between items-center sticky top-0 z-50 bg-slate-50 w-full">
     <img src="~/assets/images/favicon.png" alt="" width="65" height="65">
-    <div class="hidden md:flex items-center gap-x-5">
-      <NuxtLink
-        v-for="item in navMenu"
+    <div class="hidden md:flex items-center gap-x-10">
+      <div
+        v-for="(item, i) in navMenu"
         :key="item.url"
-        :to="item.url"
-        active-class="text-purple-500"
-        class="text-indigo-500 font-semibold hover:text-indigo-500 transition-all"
       >
-        {{ item.title }}
-      </NuxtLink>
+        
+        <div :class="item.child ? 'dropdown dropdown-hover' : null">
+          <NuxtLink
+            :tabindex="i"
+            :to="item.child ? '' : item.url"
+            class="text-indigo-500 font-medium hover:text-indigo-600 hover:font-medium transition-all hover:cursor-pointer hover:border-b-2 flex items-center"
+          >
+            <span>{{ item.title }}</span>
+            <Icon name="mdi:chevron-down" class="text-2xl" v-if="item.child" />
+          </NuxtLink>
+          <ul tabindex="0" class="dropdown-content menu p-2 rounded-box shadow w-72 -translate-x-[40%] bg-white border-t-2 border-purple-500" v-if="item.child">
+            <li v-for="service in item.child">
+              <NuxtLink :to="service.link">
+                <div class="flex items-center gap-x-3">
+                  <img :src="service.background" alt="" class="w-8 h-8">
+                  <div class="flex flex-col text-sm ">
+                    <p class="font-bold">{{ service.name }}</p>
+                    <p>{{ service.title }}</p>
+                  </div>
+                </div>
+              </NuxtLink>
+            </li>
+          </ul>
+      </div>
+      </div>
     </div>
     <Hamburger class="w-10 md:hidden transition-all" @click="() => isShow = !isShow" :is-open="isShow" />
     <Transition name="slide-fade" mode="out-in">

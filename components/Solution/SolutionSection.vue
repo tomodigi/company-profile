@@ -6,7 +6,7 @@ import { serviceList } from '../../data/TomoService.js'
 <template>
   <section id="solutionSection" class="inner--content">
     <h1 class="text-4xl text-neutral-800 font-bold text-center mb-10">Our Solutions</h1>
-    <div class="flex gap-x-6 flex-wrap justify-center md:justify-start">
+    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3">
       <SolutionItem
         v-for="(solution, index) in serviceList"
         :key="solution.name"
