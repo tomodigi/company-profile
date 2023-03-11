@@ -13,10 +13,6 @@ module.exports = {
       fontFamily: {
         'tomo-main': ['Kanit', 'sans-serif']
       },
-      backgroundImage: {
-        'texture': "url('~/assets/images/texture.jpg')",
-        'texture2': "url('~/assets/images/pattern.svg')"
-      },
       animation: {
         'type-writter': 'typing 3s steps(40, end)'
       },
@@ -28,5 +24,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 }

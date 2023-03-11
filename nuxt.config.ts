@@ -12,6 +12,7 @@ export default defineNuxtConfig({
         onPageLoad: true,
       },
     ],
+    'nuxt-icon',
   ],
   app: {
     head: {
@@ -22,6 +23,18 @@ export default defineNuxtConfig({
         {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1',
+        },
+        {
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          name: 'keywords',
+          content: 'Digital Agency, Tomo, tomodigi, jasa pembuatan web, jasa pembuatan animasi, jasa pembuatan video'
+        },
+        {
+          name: 'robots',
+          content: "index, follow"
         },
       ],
       link: [
@@ -40,7 +53,7 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Plus+Jakarta+Sans&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@600;700;800&family=Plus+Jakarta+Sans&display=swap',
         },
       ],
     },
