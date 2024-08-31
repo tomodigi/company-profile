@@ -1,25 +1,128 @@
 <script setup>
-
+import { socialMedia } from '../data/socialMedia';
 </script>
 <template>
-  <div class="relative">
-    <div class="circle w-52 h-52 rounded-full bg-purple-400 absolute bottom-1 md:bottom-8 2xl:bottom-12 left-11 blur-xl opacity-30"></div>
-    <div class="circle w-52 h-52 rounded-full bg-sky-400 absolute top-12 right-12 blur-xl opacity-30 z-50"></div>
-    <div class="inner--content flex flex-col items-center justify-center md:flex-row">
-      <article class="order-2 md:order-1">
-        <h1 class="text-4xl text-center md:text-7xl font-tomo-main font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">TOMO</h1>
-        <h2 class="text-xl text-center md:text-4xl font-tomo-main font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Digital Creative</h2>
-        <p class="max-w-md text-justify text-neutral-700 mt-3 text-lg font-sans font-medium">
-          <span class="font-medium font-tomo-main leading-relaxed text-neutral-800">TOMO</span>
-          merupakan konsultan sekaligus penyedia layanan Jasa Digital Marketing untuk berbagai tahapan bisnis, hasil kolaborasi dari berbagai Agency & Profesional terbaik di Indonesia!
-        </p>
+  <div class="relative w-full h-full">
+    <img src="/assets/images/gradient.jpg" alt="" class="absolute w-full h-[95%] opacity-25 brightness-50 bg-background-primary/50 rounded-xl">
+    <div class="absolute colour-1"></div>
+    <div class="absolute colour-2"></div>
+    <div class="z-50 flex items-center justify-center w-full h-[90%] backdrop-blur-sm px-16">
+      <article class="2xl:mr-28">
+        <h1 data-aos="fade-right" class="font-extrabold text-8xl"><span class="text-color-primary">Digital</span> Creative Partner for Innovative <span class="text-color-primary">Solutions</span></h1>
+        <p data-aos="fade-up" class="mt-24 text-lg text-slate-50">Tomodigi.id adalah sebuah agensi digital kreatif yang berfokus pada pengembangan solusi digital inovatif untuk membantu brand dan bisnis berkembang di era digital. lebih dari 50+ project yang sudah kami selesaikan dengan pendekatan yang disesuaikan dan inovatif.</p>
       </article>
-      <!-- <img src="~/assets/images/4380.jpg" alt="" class="mt-16 w-2/3" data-aos="fade-left"> -->
-      <img src="~/assets/images/19362653.webp" alt="" class="mt-16 w-full md:w-2/3 order-1 md:order-2 bg-blend-overlay" data-aos="fade-left">
-      <!-- <h1 class="text-4xl md:text-6xl text-center font-tomo-main font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Digital Creative</h1>
-      <div class="text-center mt-5">
-        <h2 class="text-slate-300 text-xl md:text-3xl font-bold inline-block whitespace-nowrap box-border overflow-hidden tracking-[3px] animate-type-writter">Your digital problem solution</h2>
-      </div> -->
+      <div id="socialMedia" class="flex flex-col items-center justify-center gap-5 mr-5">
+        <div class="verticalLine h-[226px] w-[2px] bg-white/55 mb-4"></div>
+        <a
+          v-for="(social, index) in socialMedia"
+          :key="index"
+          class="faded flex items-center justify-center p-2 border-2 border-color-primary text-color-primary rounded-full hover:!bg-color-primary hover:text-gray-900 transition-all"
+          :href="social.link"
+          data-aos="fade-down"
+          :data-aos-delay="100 + (index * 100)"
+        >
+          <Icon :name="social.icon" class="text-3xl" />
+        </a>
+      </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.verticalLine {
+  animation: expanding 0.5s forwards;
+}
+.colour-1 {
+  opacity: 0.4;
+  box-shadow: 0 0 175px 175px magenta;
+  animation: hueRotate 10s 0s linear infinite, colour-1 19s 0s linear infinite;
+}
+.colour-2 {
+  opacity: 0.4;
+  box-shadow: 0 0 175px 175px green;
+  animation: hueRotate 10s 0s linear infinite, colour-2 19s 0s linear infinite;
+}
+.colour-3 {
+  box-shadow: 10vmax 1vmax 20vmax 10vmax red;
+  animation: hueRotate 20s 0s linear infinite, colour-3 15s 0s linear infinite;
+}
+@keyframes hueRotate {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes colour-1 {
+  0% {
+    top: 25%;
+    left: 50%;
+  }
+  25% {
+    left: 15%;
+  }
+  50% {
+    top: 70%;
+  }
+  75% {
+    left: 85%;
+  }
+  100% {
+    top: 30%;
+    left: 50%;
+  }
+}
+@keyframes colour-2 {
+  0% {
+    top: 45%;
+    left: 85%;
+  }
+  25% {
+    top: 50%;
+  }
+  50% {
+    left: 20%;
+  }
+  75% {
+    top: 30%;
+  }
+  100% {
+    top: 45%;
+    left: 85%;
+  }
+}
+@keyframes colour-3 {
+  0% {
+    top: 100vh;
+    left: 50vw;
+  }
+  25% {
+    left: 100vw;
+  }
+  50% {
+    top: 0vh;
+  }
+  75% {
+    left: 0vw;
+  }
+  100% {
+    top: 100vh;
+    left: 50vw;
+  }
+}
+
+@keyframes expanding {
+  from {
+    height: 0;
+  }
+  to {
+    height: 226px;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>

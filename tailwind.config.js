@@ -10,8 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        'tomo-main': ['Kanit', 'sans-serif']
+      colors: {
+        'background-primary': '#202351',
+        'background-secondary': '#232252',
+        'color-primary': '#9762FD'
       },
       animation: {
         'type-writter': 'typing 3s steps(40, end)'

@@ -14,7 +14,7 @@ export const socialMedia = [
   {
     name: 'Twitter',
     accountName: 'tomodigiid',
-    icon: 'mdi:twitter',
+    icon: 'ph:twitter-logo',
     link: 'https://twitter.com/tomodigiid'
   },
 ]

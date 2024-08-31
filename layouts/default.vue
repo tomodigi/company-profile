@@ -1,12 +1,12 @@
 <script setup>
 </script>
 <template>
-  <main class="relative bg-white w-full">
-    <!-- <div class="outer-content w-full 2xl:w-[1400px]"> -->
+  <main class="relative w-full bg-background-primary">
+    <div class="w-full 2xl:w-[1400px] mx-auto">
       <Navbar />
         <slot></slot>
       <FooterApp />
-    <!-- </div> -->
+    </div>
   </main>
 </template>
 
