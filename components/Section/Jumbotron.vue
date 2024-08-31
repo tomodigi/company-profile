@@ -8,7 +8,7 @@ import { socialMedia } from '../data/socialMedia';
     <div class="absolute colour-2"></div>
     <div class="z-50 flex items-center justify-center w-full h-[90%] backdrop-blur-sm px-16">
       <article class="2xl:mr-28">
-        <h1 data-aos="fade-right" class="font-extrabold text-8xl"><span class="text-color-primary">Digital</span> Creative Partner for Innovative <span class="text-color-primary">Solutions</span></h1>
+        <h1 data-aos="fade-right" class="font-extrabold leading-[110px] text-8xl"><span class="text-color-primary">Digital</span> Creative Partner for Innovative <span class="text-color-primary">Solutions</span></h1>
         <p data-aos="fade-up" class="mt-24 text-lg text-slate-50">Tomodigi.id adalah sebuah agensi digital kreatif yang berfokus pada pengembangan solusi digital inovatif untuk membantu brand dan bisnis berkembang di era digital. lebih dari 50+ project yang sudah kami selesaikan dengan pendekatan yang disesuaikan dan inovatif.</p>
       </article>
       <div id="socialMedia" class="flex flex-col items-center justify-center gap-5 mr-5">

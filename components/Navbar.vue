@@ -24,7 +24,7 @@ const isShow = ref(false)
 </script>
 
 <template>
-  <nav class="sticky top-0 z-[9999] flex items-center justify-between w-full h-16 border-b border-gray-800">
+  <nav class="sticky top-0 z-[9999] flex items-center justify-between w-full h-16 border-b border-gray-800 px-5 md:px-10 2xl:px-0 bg-background-primary py-5">
     <img src="~/assets/images/favicon.png" alt="" width="65" height="65">
     <div class="items-center hidden md:flex gap-x-10">
       <div
