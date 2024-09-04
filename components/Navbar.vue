@@ -4,18 +4,19 @@ import { serviceList } from '~/data/TomoService'
 
 const navMenu = ref([
   {
-    title: 'Home',
+    title: 'About',
     url: '/'
   },
   {
     title: 'Services',
-    url: '/services',
-    child: [
-      ...serviceList,
-    ]
+    url: '#services',
   },
   {
-    title: 'About Us',
+    title: 'Portfolio',
+    url: '#about'
+  },
+  {
+    title: 'Contact',
     url: '#about'
   }
 ])
@@ -23,9 +24,9 @@ const isShow = ref(false)
 </script>
 
 <template>
-  <nav class="inner--content h-16 flex justify-between items-center sticky top-0 z-50 bg-slate-50 w-full">
-    <img src="~/assets/images/favicon.png" alt="" width="65" height="65">
-    <div class="hidden md:flex items-center gap-x-10">
+  <nav class="sticky top-0 z-[9999] flex items-center justify-between w-full h-16 border-b border-gray-800 px-5 md:px-10 2xl:px-0 bg-background-primary py-5">
+    <img src="~/assets/images/logo_text.png" alt="" width="150" height="100">
+    <div class="items-center hidden md:flex gap-x-10">
       <div
         v-for="(item, i) in navMenu"
         :key="item.url"
@@ -35,7 +36,7 @@ const isShow = ref(false)
           <NuxtLink
             :tabindex="i"
             :to="item.child ? '' : item.url"
-            class="text-indigo-500 font-medium hover:text-indigo-600 hover:font-medium transition-all hover:cursor-pointer hover:border-b-2 flex items-center"
+            class="flex items-center font-medium text-indigo-500 transition-all hover:text-indigo-600 hover:font-medium hover:cursor-pointer hover:border-b-2"
           >
             <span>{{ item.title }}</span>
             <Icon name="mdi:chevron-down" class="text-2xl" v-if="item.child" />
@@ -56,15 +57,15 @@ const isShow = ref(false)
       </div>
       </div>
     </div>
-    <Hamburger class="w-10 md:hidden transition-all" @click="() => isShow = !isShow" :is-open="isShow" />
+    <Hamburger class="w-10 transition-all md:hidden" @click="() => isShow = !isShow" :is-open="isShow" />
     <Transition name="slide-fade" mode="out-in">
-      <div class="absolute inset-x-0 top-16 bg-slate-50 flex flex-col gap-y-4 text-center -mx-5 py-5" v-if="isShow">
+      <div class="absolute inset-x-0 flex flex-col py-5 -mx-5 text-center top-16 bg-slate-50 gap-y-4" v-if="isShow">
         <NuxtLink
           v-for="item in navMenu"
           :key="item.url"
           :to="item.url"
           active-class="text-purple-500"
-          class="text-indigo-500 font-semibold hover:text-indigo-500 transition-all"
+          class="font-semibold text-indigo-500 transition-all hover:text-indigo-500"
           @click="() => isShow = !isShow"
         >
           {{ item.title }}

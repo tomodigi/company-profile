@@ -1,19 +1,27 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
+
   nitro: {
     preset: 'netlify',
   },
-  modules: [
-    [
-      '@nuxtjs/google-adsense',
-      {
-        id: 'ca-pub-2170630358154868',
-        onPageLoad: true,
-      },
-    ],
-    'nuxt-icon',
-  ],
+
+  modules: [[
+    '@nuxtjs/google-adsense',
+    {
+      id: 'ca-pub-2170630358154868',
+      onPageLoad: true,
+    },
+  ], 'nuxt-icon', '@nuxtjs/google-fonts'],
+
+  googleFonts: {
+    families: {
+      "Schibsted Grotesk": [400, 500, 600, 700],
+    },
+    prefetch: true,
+    preconnect: true,
+  },
+
   app: {
     head: {
       title: 'Tomo Digital Creative',
@@ -43,26 +51,28 @@ export default defineNuxtConfig({
           href: '/favicon.png',
         },
         {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com',
-        },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: 'anonymous',
+          rel: 'dns-prefetch',
+          href: 'https://unpkg.com/',
+          fetchpriority: 'high',
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Kanit:wght@600;700;800&family=Plus+Jakarta+Sans&display=swap',
-        },
+          href: 'https://unpkg.com/aos@2.3.1/dist/aos.css',
+          fetchpriority: 'high',
+          crossorigin: 'anonymous',
+        }
       ],
     },
   },
+
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
+  compatibilityDate: '2024-08-31',
 });

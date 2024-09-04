@@ -15,10 +15,10 @@ useServerSeoMeta({
 
 </script>
 <template>
-  <div>
-    <Jumbotron class="w-full flex justify-between items-center md:h-[80vh]" />
-    <SolutionSection class="mt-16" />
-    <!-- <TeamSection class="mt-16" /> -->
-    <AboutusSection />
+  <div class="grid gap-20">
+    <SectionJumbotron class="md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10" />
+    <SectionIntroduction />
+    <SectionServices />
+    <SectionRecentWork />
   </div>
 </template>
