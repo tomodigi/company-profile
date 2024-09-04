@@ -13,7 +13,11 @@ module.exports = {
       colors: {
         'background-primary': '#202351',
         'background-secondary': '#232252',
+        'background-base': '#14113F',
         'color-primary': '#9762FD'
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(90deg, #9762FD 0%, #00B5FC 100%)',
       },
       animation: {
         'type-writter': 'typing 3s steps(40, end)'

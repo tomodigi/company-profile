@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  color: #fff;
+}
 body {
   font-family: "InterSchibsted Grotesk", sans-serif;
 }
-* {
-  color: #fff;
+.section--title {
+  @apply text-2xl font-bold text-white md:text-6xl md:leading-[66px];
 }

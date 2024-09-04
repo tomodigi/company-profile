@@ -18,8 +18,7 @@ useServerSeoMeta({
   <div class="grid gap-20">
     <SectionJumbotron class="md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10" />
     <SectionIntroduction />
-    <SolutionSection />
-    <!-- <TeamSection class="mt-16" /> -->
-    <AboutusSection />
+    <SectionServices />
+    <SectionRecentWork />
   </div>
 </template>
