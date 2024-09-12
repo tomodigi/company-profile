@@ -2,8 +2,8 @@
 const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client']
 </script>
 <template>
-  <div class="flex gap-20">
-    <img src="/assets/images/0b5e4cc9ca05fc99285e2a9c1b7cc599xx.jpg" alt="" width="650" height="650" class="object-cover rounded-md w-[750px] h-[600px]">
+  <section id="intoduction" class="flex flex-col w-full gap-20 p-5 md:p-0 md:flex-row">
+    <img src="/assets/images/0b5e4cc9ca05fc99285e2a9c1b7cc599xx.jpg" alt="" width="650" height="650" class="object-cover rounded-md w-full xl:w-[750px] xl:h-[600px]" />
     <div class="flex flex-col">
       <article>
         <h2 class="section--title">
@@ -13,7 +13,7 @@ const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client
           <slot name="subtitle"></slot>
         </p>
       </article>
-      <div class="flex justify-around mt-[62px] gap-5">
+      <div class="flex flex-col md:flex-row justify-around mt-[62px] gap-5">
         <div class="flex flex-col gap-5 shrink-0">
           <button v-for="(item, index) in experience" :key="index" class="px-10 py-3.5 border rounded-full border-color-primary font-bold">
             {{ item }}
@@ -31,5 +31,5 @@ const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client
         </div>
       </div>
     </div>
-  </div>
+  </section id="intoduction">
 </template>

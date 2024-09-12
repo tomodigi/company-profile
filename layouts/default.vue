@@ -1,8 +1,8 @@
 <script setup>
 </script>
 <template>
-  <main class="relative w-full bg-background-primary">
-    <div class="w-full 2xl:w-[1400px] mx-auto">
+  <main class="bg-background-primary">
+    <div class="relative w-full 2xl:w-[1400px] mx-auto">
       <Navbar />
         <slot></slot>
       <FooterApp />

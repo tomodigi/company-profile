@@ -1,22 +1,22 @@
-<script setup>
-import { socialMedia } from '../data/socialMedia';
+<script setup lang="ts">
+import { socialMedia } from '../../data/socialMedia';
 </script>
 <template>
-  <div class="relative w-full h-full md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10">
+  <section id="jumbotron" class="relative w-full h-[80vh] md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10">
     <img src="/assets/images/gradient.jpg" alt="" class="absolute w-full h-[95%] opacity-25 brightness-50 bg-background-primary/50 rounded-xl">
     <div class="absolute colour-1"></div>
     <div class="absolute colour-2"></div>
-    <div class="z-50 flex items-center justify-center w-full h-[90%] backdrop-blur-sm px-16">
+    <div class="z-50 flex flex-col md:flex-row items-center justify-center w-full h-[90%] backdrop-blur-sm p-5 md:px-16">
       <article class="2xl:mr-28">
-        <h1 data-aos="fade-right" class="font-extrabold leading-[110px] text-8xl">
+        <h1 data-aos="fade-right" class="font-extrabold text-5xl leading-[55px] sm:text-6xl xl:leading-[110px] xl:text-8xl">
           <slot name="title"></slot>
         </h1>
-        <p data-aos="fade-up" class="mt-24 text-lg text-slate-50">
+        <p data-aos="fade-up" class="mt-8 text-lg md:mt-24 text-slate-50">
           <slot name="subtitle"></slot>
         </p>
       </article>
-      <div id="socialMedia" class="flex flex-col items-center justify-center gap-5 mr-5">
-        <div class="verticalLine h-[226px] w-[2px] bg-white/55 mb-4"></div>
+      <div id="socialMedia" class="flex flex-row items-center justify-center gap-5 mt-12 mr-5 md:flex-col md:mt-0">
+        <div class="verticalLine h-[226px] w-[2px] bg-white/55 mb-4 hidden md:block"></div>
         <a
           v-for="(social, index) in socialMedia"
           :key="index"
@@ -29,7 +29,7 @@ import { socialMedia } from '../data/socialMedia';
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
