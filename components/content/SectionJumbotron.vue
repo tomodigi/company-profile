@@ -2,14 +2,18 @@
 import { socialMedia } from '../data/socialMedia';
 </script>
 <template>
-  <div class="relative w-full h-full">
+  <div class="relative w-full h-full md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10">
     <img src="/assets/images/gradient.jpg" alt="" class="absolute w-full h-[95%] opacity-25 brightness-50 bg-background-primary/50 rounded-xl">
     <div class="absolute colour-1"></div>
     <div class="absolute colour-2"></div>
     <div class="z-50 flex items-center justify-center w-full h-[90%] backdrop-blur-sm px-16">
       <article class="2xl:mr-28">
-        <h1 data-aos="fade-right" class="font-extrabold leading-[110px] text-8xl"><span class="text-color-primary">Digital</span> Creative Partner for Innovative <span class="text-color-primary">Solutions</span></h1>
-        <p data-aos="fade-up" class="mt-24 text-lg text-slate-50">Tomodigi.id adalah sebuah agensi digital kreatif yang berfokus pada pengembangan solusi digital inovatif untuk membantu brand dan bisnis berkembang di era digital. lebih dari 50+ project yang sudah kami selesaikan dengan pendekatan yang disesuaikan dan inovatif.</p>
+        <h1 data-aos="fade-right" class="font-extrabold leading-[110px] text-8xl">
+          <slot name="title"></slot>
+        </h1>
+        <p data-aos="fade-up" class="mt-24 text-lg text-slate-50">
+          <slot name="subtitle"></slot>
+        </p>
       </article>
       <div id="socialMedia" class="flex flex-col items-center justify-center gap-5 mr-5">
         <div class="verticalLine h-[226px] w-[2px] bg-white/55 mb-4"></div>

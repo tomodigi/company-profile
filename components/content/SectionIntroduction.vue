@@ -6,8 +6,12 @@ const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client
     <img src="/assets/images/0b5e4cc9ca05fc99285e2a9c1b7cc599xx.jpg" alt="" width="650" height="650" class="object-cover rounded-md w-[750px] h-[600px]">
     <div class="flex flex-col">
       <article>
-        <h2 class="section--title">Jelajahi Dunia Kreatif Digital dengan <span class="text-color-primary">Tomodigi.id</span></h2>
-        <p class="mt-[72px] text-lg">Raih audiens yang lebih luas dan bangun hubungan yang kuat dengan pelanggan</p>
+        <h2 class="section--title">
+          <slot name="title"></slot>
+        </h2>
+        <p class="mt-[72px] text-lg">
+          <slot name="subtitle"></slot>
+        </p>
       </article>
       <div class="flex justify-around mt-[62px] gap-5">
         <div class="flex flex-col gap-5 shrink-0">
@@ -18,9 +22,11 @@ const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client
         <div class="flex flex-col gap-10">
           <div class="flex items-center gap-2">
             <img src="/Intro.svg" alt="" width="50" height="50">
-            <p class="font-semibold">Intro Video</p>
+            <p class="font-semibold">
+              <slot name="video-title"></slot>
+            </p>
           </div>
-          <p class="text-sm text-slate-200">Dengan Tomodigi.id, wujudkan ide-ide besar Anda di dunia digital</p>
+          <p class="text-sm text-slate-200"><slot name="video-subtitle"></slot></p>
           <hr class="border border-slate-200 opacity-40">
         </div>
       </div>

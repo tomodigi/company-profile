@@ -15,10 +15,7 @@ useServerSeoMeta({
 
 </script>
 <template>
-  <div class="grid gap-20">
-    <SectionJumbotron class="md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10" />
-    <SectionIntroduction />
-    <SectionServices />
-    <SectionRecentWork />
-  </div>
+  <main>
+    <ContentDoc class="grid gap-20" />
+  </main>
 </template>

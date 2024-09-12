@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       id: 'ca-pub-2170630358154868',
       onPageLoad: true,
     },
-  ], 'nuxt-icon', '@nuxtjs/google-fonts'],
+  ], 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/content'],
 
   googleFonts: {
     families: {
