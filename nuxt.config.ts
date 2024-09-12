@@ -1,18 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
-
-  nitro: {
-    preset: 'netlify',
-  },
-
   modules: [[
     '@nuxtjs/google-adsense',
     {
       id: 'ca-pub-2170630358154868',
       onPageLoad: true,
     },
-  ], 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/content'],
+  ], 'nuxt-icon', '@nuxtjs/google-fonts', '@nuxt/content', '@nuxt/image'],
 
   googleFonts: {
     families: {
@@ -63,6 +58,10 @@ export default defineNuxtConfig({
         }
       ],
     },
+  },
+
+  routeRules: {
+    '/': { prerender: true }
   },
 
   css: ['~/assets/css/main.css'],
