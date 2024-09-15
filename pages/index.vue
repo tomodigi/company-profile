@@ -1,5 +1,4 @@
 <script setup>
-import SolutionSection from '../components/Solution/SolutionSection.vue';
 const route = useRoute();
 
 useServerSeoMeta({
@@ -13,6 +12,26 @@ useServerSeoMeta({
   ogUrl: route.fullPath
 })
 
+// const initAnimation = () => {
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add('block'); 
+//       } else {
+//         entry.target.classList.remove('block');
+//       }
+//     });
+//   }, {
+//       threshold: 0.4
+//   });
+  
+//   const boxes = document.querySelectorAll('');
+//   boxes.forEach(box => observer.observe(box));
+// }
+
+// onMounted(() => {
+//   initAnimation();
+// })
 </script>
 <template>
   <main>

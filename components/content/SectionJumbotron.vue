@@ -8,10 +8,19 @@ import { socialMedia } from '../../data/socialMedia';
     <div class="absolute colour-2"></div>
     <div class="z-50 flex flex-col md:flex-row items-center justify-center w-full h-[90%] backdrop-blur-sm p-5 md:px-16">
       <article class="2xl:mr-28">
-        <h1 data-aos="fade-right" class="font-extrabold text-5xl leading-[55px] sm:text-6xl xl:leading-[110px] xl:text-8xl">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="font-extrabold text-5xl leading-[55px] sm:text-6xl xl:leading-[110px] xl:text-8xl"
+        >
           <slot name="title"></slot>
         </h1>
-        <p data-aos="fade-up" class="mt-8 text-lg md:mt-24 text-slate-50">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          class="mt-8 text-lg md:mt-24 text-slate-50"
+        >
           <slot name="subtitle"></slot>
         </p>
       </article>
@@ -23,7 +32,8 @@ import { socialMedia } from '../../data/socialMedia';
           class="faded flex items-center justify-center p-2 border-2 border-color-primary text-color-primary rounded-full hover:!bg-color-primary hover:text-gray-900 transition-all"
           :href="social.link"
           data-aos="fade-down"
-          :data-aos-delay="100 + (index * 100)"
+          :data-aos-delay="300 + (index * 100)"
+          data-aos-duration="600"
         >
           <Icon :name="social.icon" class="text-3xl" />
         </a>
