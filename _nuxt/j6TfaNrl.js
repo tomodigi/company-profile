@@ -1,1 +1,0 @@
-const i=[{name:"instagram",accountName:"tomodigiid",icon:"mdi:instagram",link:"https://instagram.com/tomodigiid"},{name:"Tiktok",accountName:"tomodigi.id",icon:"ic:baseline-tiktok",link:"https://tiktok.com/@tomdoigi.id"},{name:"Twitter",accountName:"tomodigiid",icon:"ph:twitter-logo",link:"https://twitter.com/tomodigiid"}];export{i as s};
