@@ -68,6 +68,9 @@ const cardsData: CardProps[] = [
       :title="card.title"
       :description="card.description"
       :imgSrc="card.imgSrc"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      :data-aos-delay="150 + index * 100"
     />
   </div>
 </template>
