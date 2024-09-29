@@ -1,1 +1,0 @@
-import{ac as i,ad as p,u as o,ae as t}from"./B8YRd_Ky.js";const a=i({title:"Tomo digital Creative"}),e={nuxt:{}},f=p(a,e);function u(){const n=o();return n._appConfig||(n._appConfig=t(f)),n._appConfig}export{u};
