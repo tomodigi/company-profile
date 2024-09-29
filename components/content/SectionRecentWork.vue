@@ -205,7 +205,7 @@ const tabContents = [
 const activeTabs = ref(0); // index
 </script>
 <template>
-  <section id="recentWork" clas="w-full p-5 md:p-0">
+  <section id="portfolio" clas="w-full p-5 md:p-0">
     <div class="flex flex-col justify-around gap-16 p-5 md:flex-row">
       <h2 class="section--title shrink-0"><slot name="title"></slot></h2>
       <p><slot name="subtitle"></slot></p>
