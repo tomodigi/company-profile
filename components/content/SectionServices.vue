@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { CardProps } from "./../Card/CardBorder.vue";
-import CardBorder from "./../Card/CardBorder.vue";
 
 const cardsData: CardProps[] = [
   {
@@ -61,16 +60,26 @@ const cardsData: CardProps[] = [
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <CardBorder
-      v-for="(card, index) in cardsData"
-      :key="index"
-      :title="card.title"
-      :description="card.description"
-      :imgSrc="card.imgSrc"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      :data-aos-delay="150 + index * 100"
-    />
+  <div id="services" class="min-h-screen">
+    <div class="mx-auto bg-[#14113F] rounded-3xl p-8">
+      <h2 class="section--title shrink-0 text-center mt-16">
+        <slot name="title-1"></slot>
+      </h2>
+      <h2 class="section--title shrink-0 text-center mb-24">
+        <slot name="title-2"></slot>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <CardBorder
+          v-for="(card, index) in cardsData"
+          :key="index"
+          :title="card.title"
+          :description="card.description"
+          :imgSrc="card.imgSrc"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          :data-aos-delay="150 + index * 100"
+        />
+      </div>
+    </div>
   </div>
 </template>

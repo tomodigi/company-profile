@@ -15,10 +15,10 @@ Intro Video
 Dengan Tomodigi.id, wujudkan ide-ide besar Anda di dunia digital
 ::
 ::section-services
-#title
-Digital Creative Partner for Innovative Solutions
-#subtitle
-Tomodigi.id adalah sebuah agensi digital kreatif yang berfokus pada pengembangan solusi digital inovatif untuk membantu brand dan bisnis berkembang di era digital. lebih dari 50+ project yang sudah kami selesaikan dengan pendekatan yang disesuaikan dan inovatif.
+#title-1
+Our Services, Action what
+#title-2
+we believe in
 ::
 ::section-recent-work
 #title
