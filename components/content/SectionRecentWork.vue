@@ -5,55 +5,55 @@ const tabContents = [
     content: [
       {
         name: "Mechavast",
-        thumbnail: "/recent-work/logo/1.jpg",
+        thumbnail: "/recent-work/logo/1.webp",
       },
       {
         name: "Neurona",
-        thumbnail: "/recent-work/logo/2.jpg",
+        thumbnail: "/recent-work/logo/2.webp",
       },
       {
         name: "Guideex",
-        thumbnail: "/recent-work/logo/3.jpg",
+        thumbnail: "/recent-work/logo/3.webp",
       },
       {
         name: "Dentspark",
-        thumbnail: "/recent-work/logo/4.jpg",
+        thumbnail: "/recent-work/logo/4.webp",
       },
       {
         name: "FAM Burden",
-        thumbnail: "/recent-work/logo/5.jpg",
+        thumbnail: "/recent-work/logo/5.webp",
       },
       {
         name: "Ngemil Ciyus",
-        thumbnail: "/recent-work/logo/6.jpg",
+        thumbnail: "/recent-work/logo/6.webp",
       },
       {
         name: "Fortune Medika",
-        thumbnail: "/recent-work/logo/7.jpg",
+        thumbnail: "/recent-work/logo/7.webp",
       },
       {
         name: "Diksi Nasi",
-        thumbnail: "/recent-work/logo/8.jpg",
+        thumbnail: "/recent-work/logo/8.webp",
       },
       {
         name: "Bell Va Nia",
-        thumbnail: "/recent-work/logo/9.jpg",
+        thumbnail: "/recent-work/logo/9.webp",
       },
       {
         name: "Hargeon",
-        thumbnail: "/recent-work/logo/10.jpg",
+        thumbnail: "/recent-work/logo/10.webp",
       },
       {
         name: "Sambal Melek",
-        thumbnail: "/recent-work/logo/11.jpg",
+        thumbnail: "/recent-work/logo/11.webp",
       },
       {
         name: "Well Eden",
-        thumbnail: "/recent-work/logo/12.jpg",
+        thumbnail: "/recent-work/logo/12.webp",
       },
       {
         name: "Leaphia",
-        thumbnail: "/recent-work/logo/13.jpg",
+        thumbnail: "/recent-work/logo/13.webp",
       },
     ],
   },
@@ -62,15 +62,15 @@ const tabContents = [
     content: [
       {
         name: "Kohesif Studio",
-        thumbnail: "/recent-work/social-media/1.jpg",
+        thumbnail: "/recent-work/social-media/1.webp",
       },
       {
         name: "Overtime Coffee 1",
-        thumbnail: "/recent-work/social-media/2.jpg",
+        thumbnail: "/recent-work/social-media/2.webp",
       },
       {
         name: "Overtime Coffee 2",
-        thumbnail: "/recent-work/social-media/3.jpg",
+        thumbnail: "/recent-work/social-media/3.webp",
       },
     ],
   },
@@ -79,39 +79,39 @@ const tabContents = [
     content: [
       {
         name: "API Kurir",
-        thumbnail: "/recent-work/web-development/1.jpg",
+        thumbnail: "/recent-work/web-development/1.webp",
       },
       {
         name: "Orderfaz",
-        thumbnail: "/recent-work/web-development/2.jpg",
+        thumbnail: "/recent-work/web-development/2.webp",
       },
       {
         name: "Melangkah",
-        thumbnail: "/recent-work/web-development/3.jpg",
+        thumbnail: "/recent-work/web-development/3.webp",
       },
       {
         name: "Freight Forwarder",
-        thumbnail: "/recent-work/web-development/4.jpg",
+        thumbnail: "/recent-work/web-development/4.webp",
       },
       {
         name: "Textile Factory",
-        thumbnail: "/recent-work/web-development/5.jpg",
+        thumbnail: "/recent-work/web-development/5.webp",
       },
       {
         name: "Lab FST UPY",
-        thumbnail: "/recent-work/web-development/6.jpg",
+        thumbnail: "/recent-work/web-development/6.webp",
       },
       {
         name: "Event Finance",
-        thumbnail: "/recent-work/web-development/7.jpg",
+        thumbnail: "/recent-work/web-development/7.webp",
       },
       {
         name: "Event Organizer",
-        thumbnail: "/recent-work/web-development/8.jpg",
+        thumbnail: "/recent-work/web-development/8.webp",
       },
       {
         name: "Siasik RSUD Kota Serang",
-        thumbnail: "/recent-work/web-development/9.jpg",
+        thumbnail: "/recent-work/web-development/9.webp",
       },
     ],
   },
@@ -120,83 +120,83 @@ const tabContents = [
     content: [
       {
         name: "",
-        thumbnail: "/recent-work/exterior/1.png",
+        thumbnail: "/recent-work/exterior/1.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/2.jpg",
+        thumbnail: "/recent-work/exterior/2.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/3.jpg",
+        thumbnail: "/recent-work/exterior/3.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/4.jpg",
+        thumbnail: "/recent-work/exterior/4.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/5.jpg",
+        thumbnail: "/recent-work/exterior/5.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/6.jpg",
+        thumbnail: "/recent-work/exterior/6.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/7.jpg",
+        thumbnail: "/recent-work/exterior/7.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/8.jpg",
+        thumbnail: "/recent-work/exterior/8.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/9.jpg",
+        thumbnail: "/recent-work/exterior/9.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/10.jpg",
+        thumbnail: "/recent-work/exterior/10.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/11.jpg",
+        thumbnail: "/recent-work/exterior/11.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/12.jpg",
+        thumbnail: "/recent-work/exterior/12.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/13.jpg",
+        thumbnail: "/recent-work/exterior/13.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/14.jpg",
+        thumbnail: "/recent-work/exterior/14.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/15.jpg",
+        thumbnail: "/recent-work/exterior/15.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/16.jpg",
+        thumbnail: "/recent-work/exterior/16.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/17.jpg",
+        thumbnail: "/recent-work/exterior/17.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/18.jpg",
+        thumbnail: "/recent-work/exterior/18.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/19.jpg",
+        thumbnail: "/recent-work/exterior/19.webp",
       },
       {
         name: "",
-        thumbnail: "/recent-work/exterior/20.jpg",
+        thumbnail: "/recent-work/exterior/20.webp",
       },
     ],
   },

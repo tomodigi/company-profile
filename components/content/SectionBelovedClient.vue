@@ -2,31 +2,31 @@
 const clients = [
   {
     name: "Couple Project",
-    img: "/client/couple-project.jpg",
+    img: "/client/couple-project.webp",
   },
   {
     name: "Fadsan",
-    img: "/client/fadsan.jpg",
+    img: "/client/fadsan.webp",
   },
   {
     name: "Kohesif Studio",
-    img: "/client/kohesif-studio.jpg",
+    img: "/client/kohesif-studio.webp",
   },
   {
     name: "Masfree Studio",
-    img: "/client/masfree-studio.jpg",
+    img: "/client/masfree-studio.webp",
   },
   {
     name: "RJU",
-    img: "/client/rju.png",
+    img: "/client/rju.webp",
   },
   {
     name: "WLS",
-    img: "/client/wls.jpg",
+    img: "/client/wls.webp",
   },
   {
     name: "Goresan Studio",
-    img: "/client/goresan-studio.png",
+    img: "/client/goresan-studio.webp",
   },
 ];
 </script>
@@ -34,7 +34,7 @@ const clients = [
   <div>
     <div class="max-w-4xl mx-auto">
       <img
-        src="/logo-white.png"
+        src="/logo-white.webp"
         alt="Logo White"
         width="50"
         height="50"

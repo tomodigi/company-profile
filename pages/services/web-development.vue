@@ -5,7 +5,7 @@ const route = useRoute();
 useServerSeoMeta({
   title: 'Tomo Digital Service',
   ogTitle: 'Tomo Web Development Services',
-  ogImage:'/tomo_2.png',
+  ogImage:'/tomo_2.webp',
   ogDescription: 'Di era digital, mencari informasi produk & jasa sudah biasa dilakukan melalui internet. Bisnis yang memiliki website akan lebih mudah ditemukan oleh pembeli',
   ogSiteName: 'Tomo Digital Creative',
   ogUrl: route.fullPath
@@ -47,7 +47,7 @@ const benefits = [
 <template>
   <div class="flex flex-col inner--content">
     <section id="text2" class="flex justify-between items-center h-[90vh]">
-      <img src="~/assets/images/undraw_pair_programming_re_or4.svg" alt="" class="md:w-[550px] opacity-90" data-aos="fade-left">
+      <img src="~/assets/images/undraw_pair_programming_re_or4.webp" alt="" class="md:w-[550px] opacity-90" data-aos="fade-left">
       <article data-aos="fade-right">
         <!-- <h1 class="text-4xl mb-2 place-self-start">Jasa Pembuatan Website</h1> -->
         <p class="text-2xl text-neutral-700 pr-14 text-justify leading-9">Kami menyediakan solusi <span class="font-semibold">web development</span> berkualitas untuk klien kami di seluruh Indonesia. Dengan pengalaman kami yang luas dan tim yang ahli, kami dapat membantu Anda membangun situs web yang sempurna untuk bisnis Anda.</p>
@@ -57,7 +57,7 @@ const benefits = [
       <article data-aos="fade-left">
         <p class="text-2xl text-neutral-700 pr-14 text-justify leading-9">Jangan ragu untuk mempercayakan bisnis Anda kepada kami! Kami adalah mitra yang andal dan terpercaya dalam solusi web development. Dengan pengalaman kami yang luas dan tim yang ahli, kami siap membantu Anda mencapai tujuan bisnis Anda. Hubungi kami hari ini untuk mendapatkan penawaran terbaik dan memulai perjalanan Anda menuju kesuksesan digital.</p>
       </article>
-      <img src="~/assets/images/undraw_proud_coder_re_exuy.svg" alt="" class="md:w-[550px] opacity-90" data-aos="fade-right">
+      <img src="~/assets/images/undraw_proud_coder_re_exuy.webp" alt="" class="md:w-[550px] opacity-90" data-aos="fade-right">
     </section>
     <section id="benefit">
       <h1 class="text-xl md:text-2xl text-neutral-800 font-bold text-center mb-10">Keuntungan buat website bersama Tomo</h1>

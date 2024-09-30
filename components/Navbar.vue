@@ -26,7 +26,7 @@ const isShow = ref(false);
   <nav
     class="sticky top-0 z-[9999] flex items-center justify-between w-full h-16 border-b border-gray-800 px-5 md:px-10 2xl:px-0 bg-background-primary py-5"
   >
-    <img src="~/assets/images/logo_text.png" alt="" width="150" height="100" />
+    <img src="~/assets/images/logo_text.webp" alt="" width="150" height="100" />
     <div class="items-center hidden md:flex gap-x-10">
       <div v-for="(item, i) in navMenu" :key="item.url">
         <div :class="item.child ? 'dropdown dropdown-hover' : null">

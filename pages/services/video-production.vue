@@ -6,7 +6,7 @@ const route = useRoute();
 useServerSeoMeta({
   title: 'Tomo Digital Service',
   ogTitle: 'Tomo Video Production Services',
-  ogImage:'/tomo_2.png',
+  ogImage:'/tomo_2.webp',
   ogDescription: 'Video merupakan media yang paling efektif untuk melakukan campaign, awareness, dan edukasi pasar',
   ogSiteName: 'Tomo Digital Creative',
   ogUrl: route.fullPath

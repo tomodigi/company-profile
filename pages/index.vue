@@ -4,7 +4,7 @@ const route = useRoute();
 useServerSeoMeta({
   title: 'Tomo Digital Creative',
   ogTitle: 'Tomo Digital Creative',
-  ogImage:'/tomo_2.png',
+  ogImage:'/tomo_2.webp',
   ogDescription: 'Tomodigi merupakan konsultan sekaligus penyedia layanan Jasa Digital Marketing untuk berbagai tahapan bisnis, hasil kolaborasi dari berbagai Agency & Profesional terbaik di Indonesia!',
   ogSiteName: 'TomoDigi',
   ogType: 'website',

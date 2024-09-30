@@ -7,7 +7,7 @@ import { socialMedia } from "~~/data/socialMedia";
     class="relative flex p-5 py-10 bg-[#A8A5F6] mt-11 flex-col"
   >
     <img
-      src="/assets/images/gradient.jpg"
+      src="/assets/images/gradient.webp"
       alt=""
       class="absolute inset-0 w-full h-full opacity-20"
     />

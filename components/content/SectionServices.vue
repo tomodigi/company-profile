@@ -3,58 +3,58 @@ import type { CardProps } from "./../Card/CardBorder.vue";
 
 const cardsData: CardProps[] = [
   {
-    imgSrc: "/service/visual-identity.png",
+    imgSrc: "/service/visual-identity.webp",
     title: "Visual Identity",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Create a unique and compelling brand image that resonates with your audience, setting your business apart from the competition.",
   },
   {
-    imgSrc: "/service/social-media-management.png",
+    imgSrc: "/service/social-media-management.webp",
     title: "Social Media Management",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Build and maintain a strong presence on social media platforms to engage with your audience and grow your brand's online community.",
   },
   {
-    imgSrc: "/service/web-development.png",
+    imgSrc: "/service/web-development.webp",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "We design and develop websites that are not only visually stunning but also optimized for performance and user experience.",
   },
   {
-    imgSrc: "/service/photography.png",
+    imgSrc: "/service/photography.webp",
     title: "Photography",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Capture the essence of your brand through high-quality photography that tells your story in a visually captivating way.",
   },
   {
-    imgSrc: "/service/videography.png",
+    imgSrc: "/service/videography.webp",
     title: "Videography",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Bring your brand to life with dynamic videos that engage and inspire your audience, delivering your message in a powerful way.",
   },
   {
-    imgSrc: "/service/motion-graphic.png",
+    imgSrc: "/service/motion-graphic.webp",
     title: "Motion Graphic",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Enhance your brand’s narrative with engaging motion graphics that simplify complex ideas and captivate viewers.",
   },
   {
-    imgSrc: "/service/3d-animation.png",
+    imgSrc: "/service/3d-animation.webp",
     title: "3D Animation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Create immersive and detailed 3D animations that bring your products or concepts to life in a way that words can't.",
   },
   {
-    imgSrc: "/service/design-exterior.png",
-    title: "Design Exterior",
+    imgSrc: "/service/design-exterior.webp",
+    title: "Exterior Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Elevate the appearance of physical spaces with innovative and aesthetic exterior designs that reflect your brand’s identity.",
   },
   {
-    imgSrc: "/service/digital-marketing.png",
+    imgSrc: "/service/digital-marketing.webp",
     title: "Digital Marketing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Reach your target audience effectively through data-driven digital marketing strategies that increase engagement and drive growth.",
   },
 ];
 </script>

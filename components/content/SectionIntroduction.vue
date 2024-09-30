@@ -4,7 +4,7 @@ const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client
 <template>
   <section id="intoduction" class="flex flex-col w-full gap-20 p-5 md:p-0 md:flex-row">
     <img
-      src="/assets/images/0b5e4cc9ca05fc99285e2a9c1b7cc599xx.jpg"
+      src="/assets/images/0b5e4cc9ca05fc99285e2a9c1b7cc599xx.webp"
       alt=""
       width="650"
       height="650"
@@ -45,7 +45,7 @@ const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client
         <div class="flex flex-col gap-10">
           <div class="flex items-center gap-2">
             <img
-              src="/Intro.svg"
+              src="/Intro.webp"
               alt=""
               width="50"
               height="50"

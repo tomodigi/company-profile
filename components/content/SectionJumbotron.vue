@@ -3,7 +3,7 @@ import { socialMedia } from '../../data/socialMedia';
 </script>
 <template>
   <section id="jumbotron" class="relative w-full h-[80vh] md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10">
-    <img src="/assets/images/gradient.jpg" alt="" class="absolute w-full h-[95%] opacity-25 brightness-50 bg-background-primary/50 rounded-xl">
+    <img src="/assets/images/gradient.webp" alt="" class="absolute w-full h-[95%] opacity-25 brightness-50 bg-background-primary/50 rounded-xl">
     <div class="absolute colour-1"></div>
     <div class="absolute colour-2"></div>
     <div class="z-50 flex flex-col md:flex-row items-center justify-center w-full h-[90%] backdrop-blur-sm p-5 md:px-16">

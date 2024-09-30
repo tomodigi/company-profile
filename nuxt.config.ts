@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'icon',
-          href: '/favicon.png',
+          href: '/favicon.webp',
         },
         {
           rel: 'dns-prefetch',
