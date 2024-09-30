@@ -17,11 +17,11 @@ const props = defineProps<CardProps>();
     <div class="w-[40%] border" />
     <h3 class="text-xl font-semibold">{{ title }}</h3>
     <p class="text-sm">{{ description }}</p>
-    <button
-      type="button"
+    <a
+      href="https://wa.me/6285175414266"
       class="px-4 py-2 text-sm font-medium rounded-full bg-gradient-primary w-fit"
     >
       Contact Us
-    </button>
+    </a>
   </div>
 </template>

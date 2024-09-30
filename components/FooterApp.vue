@@ -25,7 +25,9 @@ import { socialMedia } from "~~/data/socialMedia";
           </div>
           <div class="flex flex-col gap-4 text-gray-900">
             <p class="text-xl font-bold text-gray-900">Contact</p>
-            <a href="tel:+12345678" class="text-lg">123 - 456 - 789</a>
+            <a href="https://wa.me/6285175414266" class="text-lg"
+              >62 851-7541-4266</a
+            >
           </div>
         </div>
       </div>
