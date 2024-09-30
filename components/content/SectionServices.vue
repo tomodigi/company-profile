@@ -62,10 +62,18 @@ const cardsData: CardProps[] = [
 <template>
   <div id="services" class="min-h-screen">
     <div class="mx-auto bg-[#14113F] rounded-3xl p-8">
-      <h2 class="section--title shrink-0 text-center mt-16">
+      <h2
+        class="section--title shrink-0 text-center mt-16"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <slot name="title-1"></slot>
       </h2>
-      <h2 class="section--title shrink-0 text-center mb-24">
+      <h2
+        class="section--title shrink-0 text-center mb-24"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <slot name="title-2"></slot>
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
