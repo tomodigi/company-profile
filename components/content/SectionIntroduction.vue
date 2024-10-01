@@ -44,21 +44,6 @@ const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client
         </div>
         <div class="flex flex-col gap-10">
           <div class="flex items-center gap-2">
-            <img
-              src="/Intro.webp"
-              alt=""
-              width="50"
-              height="50"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-            <p
-              class="font-semibold"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <slot name="video-title"></slot>
-            </p>
           </div>
           <p
             class="text-sm text-slate-200"

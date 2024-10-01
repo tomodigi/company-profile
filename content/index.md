@@ -9,8 +9,6 @@ Tomodigi.id is a creative digital agency dedicated to developing innovative digi
 Explore the World of Creative Digital Solutions with [Tomodigi.id]{style="color: #C0ADFF"}
 #subtitle
 Reach a wider audience and build lasting relationships with your customers.
-#video-title
-Intro Video
 #video-subtitle
 With Tomodigi.id, bring your bold ideas to life in the digital world.
 ::
