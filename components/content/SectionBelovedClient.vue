@@ -29,6 +29,31 @@ const clients = [
     img: "/client/goresan-studio.webp",
   },
 ];
+
+const initAnimation = () => {
+  const scrollContainer = document.querySelector('.containerScroll') as HTMLElement;
+
+  // add data-animated="true" to every `.scroller` on the page
+  scrollContainer.setAttribute("data-animated", 'true');
+
+  // Make an array from the elements within `.scroller-inner`
+  const scrollerInner = scrollContainer.querySelector(".imgWrapper") as HTMLElement;
+  const scrollerContent = Array.from(scrollerInner.children);
+
+  // For each item in the array, clone it
+  // add aria-hidden to it
+  // add it into the `.scroller-inner`
+  scrollerContent.forEach((item) => {
+    const duplicatedItem = item.cloneNode(true) as HTMLElement;
+    duplicatedItem.setAttribute("aria-hidden", 'true');
+    scrollerInner.appendChild(duplicatedItem);
+  });
+
+}
+
+onMounted(() => {
+  initAnimation();
+})
 </script>
 <template>
   <div>
@@ -43,7 +68,7 @@ const clients = [
         data-aos-duration="1000"
       />
       <h2
-        class="section--title shrink-0 text-center mt-5 mb-10"
+        class="mt-5 mb-10 text-center section--title shrink-0"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -51,7 +76,7 @@ const clients = [
       </h2>
     </div>
     <hr
-      class="border border-gray-500 mb-16"
+      class="mb-16 border border-gray-500"
       data-aos="fade-up"
       data-aos-duration="1000"
     />
@@ -61,14 +86,46 @@ const clients = [
       data-aos-duration="1000"
     >
       <div
-        v-for="(client, index) in clients"
-        :key="index"
-        class="flex items-center justify-center"
+        class="flex items-center justify-center containerScroll w-[1270px]"
+        style="--time:25s"
       >
-        <div class="text-gray-400 flex items-center space-x-2">
-          <img :src="client.img" :alt="client.name" />
+        <div class="flex items-center gap-5 text-gray-400 imgWrapper">
+          <img v-for="(client, index) in clients" :key="index" :src="client.img" :alt="client.name" />
         </div>
       </div>
     </div>
   </div>
 </template>
+<style scoped>
+/* .containerScroll {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+} */
+.containerScroll[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.containerScroll[data-animated="true"] .imgWrapper {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+</style>
