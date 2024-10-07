@@ -227,21 +227,24 @@ const activeTabs = ref(0); // index
       >
         {{ category.title }}
       </button>
-      <Transition name="slide-fade" mode="out-in">
-        <div
-          id="content"
-          :key="activeTabs"
-          class="grid gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4"
-        >
-          <img
-            v-for="(content, index) in tabContents[activeTabs].content"
-            :key="index"
-            :src="content.thumbnail"
-            :alt="content.name"
-            class="w-full rounded-lg aspect-square"
-          />
-        </div>
-      </Transition>
     </div>
+    <Transition name="slide-fade" mode="out-in">
+      <div
+        id="content"
+        :key="activeTabs"
+        class="grid gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 min-h-[500px]"
+      >
+        <NuxtImg
+          v-for="(content, index) in tabContents[activeTabs].content"
+          :key="index"
+          :src="content.thumbnail"
+          :alt="content.name"
+          class="w-full rounded-lg aspect-square"
+          :width="500"
+          :height="500"
+          :placeholder="[150, 150, 10, 10]"
+        />
+      </div>
+    </Transition>
   </section>
 </template>

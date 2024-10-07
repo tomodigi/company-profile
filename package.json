@@ -2,14 +2,14 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --tunnel",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/content": "^2.13.2",
-    "@nuxt/image": "^1.8.0",
+    "@nuxt/image": "^1.8.1",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@vue/eslint-config-standard": "^8.0.1",

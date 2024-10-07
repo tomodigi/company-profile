@@ -80,20 +80,14 @@ onMounted(() => {
       data-aos="fade-up"
       data-aos-duration="1000"
     />
-    <div
-      class="grid grid-cols-7 gap-5"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
       <div
-        class="flex items-center justify-center containerScroll w-[1270px]"
+        class="grid grid-cols-7 containerScroll w-[100vw] md:w-full"
         style="--time:25s"
       >
         <div class="flex items-center gap-5 text-gray-400 imgWrapper">
           <img v-for="(client, index) in clients" :key="index" :src="client.img" :alt="client.name" />
         </div>
       </div>
-    </div>
   </div>
 </template>
 <style scoped>
