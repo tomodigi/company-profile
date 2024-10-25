@@ -232,7 +232,7 @@ const activeTabs = ref(0); // index
       <div
         id="content"
         :key="activeTabs"
-        class="grid gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 min-h-[500px]"
+        class="grid gap-6 p-5 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 min-h-[500px]"
       >
         <img
           v-for="(content, index) in tabContents[activeTabs].content"
