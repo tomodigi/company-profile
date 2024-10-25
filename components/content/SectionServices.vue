@@ -60,7 +60,7 @@ const cardsData: CardProps[] = [
 </script>
 
 <template>
-  <div id="services" class="min-h-screen">
+  <div id="services" class="min-h-screen p-5">
     <div class="mx-auto bg-[#14113F] rounded-3xl p-8">
       <h2
         class="section--title shrink-0 text-center mt-16"
