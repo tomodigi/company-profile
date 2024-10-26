@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import Modal from '@/components/Modal/Modal.vue'
 const tabContents = [
   {
     title: "Logo",
@@ -202,16 +204,37 @@ const tabContents = [
   },
 ];
 
-const activeTabs = ref(0); // index
+const activeTabs = ref(0);
+const showModal = ref(false);
+const selectedIndex = ref(0);
+
+const selectedContent = computed(() => {
+  return tabContents[activeTabs.value].content[selectedIndex.value];
+});
+
+const openModal = (index: number) => {
+  selectedIndex.value = index;
+  showModal.value = true;
+};
+
+const prevContent = () => {
+  if (selectedIndex.value > 0) {
+    selectedIndex.value--;
+  }
+};
+
+const nextContent = () => {
+  if (selectedIndex.value < tabContents[activeTabs.value].content.length - 1) {
+    selectedIndex.value++;
+  }
+};
 </script>
 <template>
-  <section id="portfolio" clas="w-full p-5 md:p-0">
+  <section id="portfolio" class="w-full p-5 md:p-0">
     <div class="flex flex-col justify-around gap-16 p-5 md:flex-row">
       <h2 class="section--title shrink-0"><slot name="title"></slot></h2>
       <p><slot name="subtitle"></slot></p>
-      <div
-        class="hidden p-5 rounded-full bg-color-primary w-fit h-fit md:block"
-      >
+      <div class="hidden p-5 rounded-full bg-color-primary w-fit h-fit md:block">
         <Icon name="ic:outline-arrow-outward" class="text-4xl text-gray-800" />
       </div>
     </div>
@@ -239,12 +262,32 @@ const activeTabs = ref(0); // index
           :key="index"
           :src="content.thumbnail"
           :alt="content.name"
-          class="w-full rounded-lg aspect-square"
+          class="w-full rounded-lg aspect-square cursor-pointer"
+          @click="openModal(index)"
           width="500"
           height="500"
           loading="lazy"
         />
       </div>
     </Transition>
+
+    <Modal :show="showModal" @close="showModal = false">
+      <template #default>
+        <div v-if="selectedContent">
+          <img :src="selectedContent.thumbnail" :alt="selectedContent.name" class="w-full rounded-lg mb-4" />
+        </div>
+      </template>
+      <template #prev-button>
+        <button @click="prevContent" :disabled="selectedIndex === 0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+        </button>
+      </template>
+      <template #next-button>
+        <button @click="nextContent" :disabled="selectedIndex === tabContents[activeTabs].content.length - 1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path></svg>
+        </button>
+      </template>
+    </Modal>
   </section>
 </template>
+
