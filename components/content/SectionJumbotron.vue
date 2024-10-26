@@ -1,12 +1,21 @@
 <script setup lang="ts">
-import { socialMedia } from '../../data/socialMedia';
+import { socialMedia } from "../../data/socialMedia";
 </script>
 <template>
-  <section id="jumbotron" class="relative w-full h-[80vh] md:h-[90vh] 2xl:h-[80vh] mt-5 2xl:mt-10 p-5">
-    <img src="/assets/images/gradient.webp" alt="" class="absolute w-[97%] h-[95%] opacity-25 brightness-50 bg-background-primary/50 rounded-xl">
+  <section
+    id="jumbotron"
+    class="relative w-full h-[80vh] md:h-[90vh] 2xl:h-[80vh] 2xl:mt-10 p-5"
+  >
+    <img
+      src="/assets/images/gradient.webp"
+      alt=""
+      class="absolute w-[97%] h-[92%] opacity-25 brightness-50 bg-background-primary/50 rounded-xl"
+    />
     <div class="absolute colour-1"></div>
     <div class="absolute colour-2"></div>
-    <div class="z-50 flex flex-col md:flex-row items-center justify-center w-full h-[90%] backdrop-blur-sm p-5 md:px-16">
+    <div
+      class="z-50 flex flex-col md:flex-row items-center justify-center w-full h-[90%] backdrop-blur-sm p-5 md:px-16"
+    >
       <article class="2xl:mr-28">
         <h1
           data-aos="fade-up"
@@ -24,15 +33,20 @@ import { socialMedia } from '../../data/socialMedia';
           <slot name="subtitle"></slot>
         </p>
       </article>
-      <div id="socialMedia" class="flex flex-row items-center justify-center gap-5 mt-12 mr-5 md:flex-col md:mt-0">
-        <div class="verticalLine h-[226px] w-[2px] bg-white/55 mb-4 hidden md:block"></div>
+      <div
+        id="socialMedia"
+        class="flex flex-row items-center justify-center gap-5 mt-12 md:flex-col md:mt-0"
+      >
+        <div
+          class="verticalLine h-[226px] w-[2px] bg-white/55 mb-4 hidden md:block"
+        ></div>
         <a
           v-for="(social, index) in socialMedia"
           :key="index"
           class="faded flex items-center justify-center p-2 border-2 border-color-primary text-color-primary rounded-full hover:!bg-color-primary hover:text-gray-900 transition-all"
           :href="social.link"
           data-aos="fade-down"
-          :data-aos-delay="300 + (index * 100)"
+          :data-aos-delay="300 + index * 100"
           data-aos-duration="600"
         >
           <Icon :name="social.icon" class="text-3xl" />
@@ -49,16 +63,22 @@ import { socialMedia } from '../../data/socialMedia';
 .colour-1 {
   opacity: 0.4;
   box-shadow: 0 0 175px 175px magenta;
-  animation: hueRotate 10s 0s linear infinite, colour-1 19s 0s linear infinite;
+  animation:
+    hueRotate 10s 0s linear infinite,
+    colour-1 19s 0s linear infinite;
 }
 .colour-2 {
   opacity: 0.4;
   box-shadow: 0 0 175px 175px green;
-  animation: hueRotate 10s 0s linear infinite, colour-2 19s 0s linear infinite;
+  animation:
+    hueRotate 10s 0s linear infinite,
+    colour-2 19s 0s linear infinite;
 }
 .colour-3 {
   box-shadow: 10vmax 1vmax 20vmax 10vmax red;
-  animation: hueRotate 20s 0s linear infinite, colour-3 15s 0s linear infinite;
+  animation:
+    hueRotate 20s 0s linear infinite,
+    colour-3 15s 0s linear infinite;
 }
 @keyframes hueRotate {
   to {
