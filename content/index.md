@@ -2,7 +2,7 @@
 #title
 [Digital]{style="color: #C0ADFF"} Creative Partner for Innovative [Solution]{style="color: #C0ADFF"}
 #subtitle
-Tomodigi.id is a creative digital agency dedicated to developing innovative digital solutions that help brands and businesses thrive in the digital age. With over 50 successful projects, we take a personalized and cutting-edge approach to every challenge, ensuring impactful results for our clients.
+Tomodigi is a digital creative agency dedicated to developing innovative digital solutions that help brands and businesses thrive in the digital age. With over 50 successful projects, we take a personalized and cutting-edge approach to every challenge, ensuring impactful results for our clients.
 ::
 ::section-introduction
 #title
