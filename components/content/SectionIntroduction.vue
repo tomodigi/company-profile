@@ -2,7 +2,7 @@
 const experience = ['50+ Project Done', '2+ Years Experience', '99% Happy Client']
 </script>
 <template>
-  <section id="intoduction" class="flex flex-col w-full gap-20 md:flex-row">
+  <section id="intoduction" class="flex flex-col w-full gap-20 p-5 md:flex-row">
     <img
       src="/assets/images/0b5e4cc9ca05fc99285e2a9c1b7cc599xx.webp"
       alt=""
